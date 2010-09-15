@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<project name="SVN Revision Number Task" default="build" basedir=".">
+
+	<target name="build" description="compiles the source code">
+		<csc target="library" output="Custom.SVNRevision.Tasks.dll" debug="false">
+			<sources>
+				<include name="**/*.cs" />
+			</sources>
+			<references>
+				<include name="System.dll" />
+				<include name="NAnt.Core.dll" />
+			</references>
+		</csc>
+	</target>
+</project>
